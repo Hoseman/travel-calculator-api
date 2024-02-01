@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form {
+    padding: 30px;
+    background-color: rgba(34, 52, 101, 0.8);
+}
+@media only screen and (max-width: 550px) {
+    .form {
+        padding: 22px;
+    }
+}
+.form__input {
+    margin-bottom:10px;
+    padding: 14px;
+    border-radius: 3px;
+    border: 0;
+    width: 96%;
+}
+@media only screen and (max-width: 1600px) {
+    .form__input {
+        width: 94.5%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .form__input {
+        width: 92.5%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .form__input {
+        width: 91.5%;
+    }
+}
+.form__select {
+    margin-bottom: 30px;
+}
+.form__heading {
+    font-size: 26px;
+    color: white;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+.form__validation {
+    color: orange;
+}
+.form__label {
+     color: white;
+     margin-bottom: 5px;
+     display: block;
+}
+.form__select {
+    border: 0;
+    border-radius: 3px;
+    padding: 12px 8px;
+    width: 300px;
+}
+@media only screen and (max-width: 550px) {
+    .form__select {
+        width: 100%;
+    }
+}
+.form__button {
+    background: rgba(172,203,65, 1.0);
+    color: white;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.form__column {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0 16px 0;
+    position: relative;
+}
+.form__col {
+    width: 50%;
+    padding-right: 0%;
+}
+@media only screen and (max-width: 800px) {
+    .form__col {
+        width: 100%;
+    }
+}
+.form__exchange-icon {
+    position: absolute;
+    left: 48.9%;
+    top: 33px;
+    background: rgba(172,203,65, 1.0);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+@media only screen and (max-width: 1600px) {
+    .form__exchange-icon {
+        left: 48.6%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .form__exchange-icon {
+        left: 48%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .form__exchange-icon {
+        display: none;
+    }
+}
+.form__intro {
+    color: white;
+    opacity: 0.6;
+}
+.form__postcode {
+    padding: 0 10px 0 10px;
+}
+.result {
+    padding: 30px;
+    background: rgba(172,203,65, 0.3);
+    margin-top: 10px;
+}
+.results__title {
+    color: black;
+    text-transform: uppercase;
+    margin: 10px 0 30px 0;
+}
