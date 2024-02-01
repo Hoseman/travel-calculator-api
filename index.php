@@ -75,9 +75,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if($vehicle_rate == "1.5"){
             $minutes_rate = 40 / 60;
             $hourly_rate = $minutes_rate * $totalMinutes;
+            $total = $rate + $hourly_rate;
         } else {
             $minutes_rate = 55 / 60;
             $hourly_rate = $minutes_rate * $totalMinutes;
+            $total = $rate + $hourly_rate;
         }   
 
         //vehicle A mileage rate = 1.50
@@ -101,6 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "<p>Vehicle: $vehicle_type</p>";
         echo "<p>Mileage Rate: £$rate</p>";
         echo "<p>Hourly Rate: £$hourly_rate</p>";
+        echo "<p>Total Price: £$total</p>";
         echo "</div>";
     } else {
         echo "<div class='result'>";
